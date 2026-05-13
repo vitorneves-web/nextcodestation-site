@@ -1,0 +1,877 @@
+/* ESTILO DE: PÁGINA PRINCIPAL */
+
+.hero {
+    background-color: var(--corHeader);
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 17%;
+}
+
+.hero #titulo {
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.hero #seta-titulo {
+    color: var(--corVermelha);
+    margin-right: 5px;
+}
+
+.hero #subtitulo {
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    font-size: 53px;
+    font-weight: 500;
+    margin-top: 15px;
+    max-width: 550px;
+}
+
+.hero #subtitulo #destaque {
+    color: var(--corVermelha);
+}
+
+.hero #descricao {
+    color: var(--corParagrafo);
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.hero #btn-whatsapp {
+    margin-top: 30px;
+    padding: 16px 32px;
+    background-color: var(--corWhatsapp);
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    transition: 0.3s;
+}
+
+.hero #chat-whatsapp {
+    margin-right: 5px;
+}
+
+.hero #btn-whatsapp:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+.hero #btn-projetos {
+    margin-top: 30px;
+    padding: 16px 32px;
+    background-color: transparent;
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #9b9b9b;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.hero #btn-projetos:hover {
+    background-color: #ffffff11;
+}
+
+.form-box {
+    background-color: #d9d9d9;
+    border-radius: 16px;
+    padding: 40px 20px;
+    font-family: var(--fonteDestaque);
+}
+
+.formulario {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    height: 58px;
+
+    padding: 0 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: var(--corBranca);
+
+    font-size: 16px;
+    color: var(--corPreta);
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+.formulario input::placeholder {
+    color: #9b9b9b;
+}
+
+.erro {
+    display: none;
+
+    color: var(--corVermelha);
+    font-size: 14px;
+    font-weight: 500;
+
+    padding-left: 6px;
+}
+
+.input-group.error .erro {
+    display: block;
+}
+
+.formulario button {
+    width: 100%;
+    height: 60px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: var(--corWhatsapp);
+    color: var(--corBranca);
+
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    opacity: 0.9;
+}
+
+.cards {
+    background-color: var(--corHeader);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 17% 70px 17%;
+}
+
+.cards .card {
+    background-color: #191B1B;
+    border-radius: 16px;
+    padding: 40px;
+    width: auto;
+    color: var(--corBranca);
+    font-family: var(--fonteDestaque);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cards .card:hover {
+    border-color: var(--corVermelha);
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.cards .card i {
+    font-size: 30px;
+    margin-bottom: 26px;
+    color: var(--corVermelha);
+}
+
+.cards .card h2 {
+    font-size: 32px;
+    margin: 16px 0px 8px 0px;
+    font-weight: 600;
+}
+
+.cards .card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ESTILO DE: SERVICES */
+
+.services {
+    background-color: var(--corHeader);
+    flex-direction: column;
+    padding: 70px 17%;
+}
+
+.services #services-titulo {
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    font-size: 53px;
+    font-weight: 500;
+    margin-top: 15px;
+    max-width: 800px;
+}
+
+.services #services-titulo #services-destaque {
+    color: var(--corVermelha);
+}
+
+.services #services-descricao {
+    color: var(--corParagrafo);
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.services .services-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 45px 0px;
+}
+
+.services .services-cards .services-card {
+    background-color: #191B1B;
+    border-radius: 16px;
+    padding: 40px;
+    width: auto;
+    color: var(--corBranca);
+    font-family: var(--fonteDestaque);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.services .services-cards .services-card:hover {
+    border-color: var(--corVermelha);
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.services .services-cards .services-card i {
+    font-size: 30px;
+    margin-bottom: 26px;
+    color: var(--corVermelha);
+}
+
+.services .services-cards .services-card h2 {
+    font-size: 32px;
+    margin: 16px 0px 8px 0px;
+    font-weight: 600;
+}
+
+.services .services-cards .services-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+.services .services-cards .services-card a { 
+    color: var(--corVermelha);
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.services .services-cards .services-card a i {
+    display: inline-block;
+    font-size: 14px;
+    transition: transform 0.5s ease;
+}
+
+.services .services-cards .services-card:hover a i {
+    transform: translateX(7px);
+}
+
+/* ESTILO DE: VIDEOS */
+
+.videos {
+    background-color: var(--corHeader);
+    flex-direction: column;
+    padding: 70px 17%;
+}
+
+.videos #videos-titulo {
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    font-size: 53px;
+    font-weight: 500;
+    margin-top: 15px;
+    max-width: 800px;
+}
+
+.videos #videos-titulo #videos-destaque {
+    color: var(--corVermelha);
+}
+
+.videos #videos-descricao {
+    color: var(--corParagrafo);
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.videos .reels {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 45px 0px;
+}
+
+.videos .reel:nth-child(even) {
+    margin-top: 30px;
+}
+
+.videos .reel {
+    position: relative;
+    width: 280px;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+    border-radius: 24px;
+    background: var(--corPreta);
+}
+
+.videos .reel-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+
+.videos .play-btn {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--corBranca);
+    font-size: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.videos .reel:hover .play-btn {
+    opacity: 1;
+}
+
+.videos .reel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.videos .reel:hover::before {
+    background: rgba(0, 0, 0, 0);
+}
+
+
+.videos #btn-whatsapp {
+    margin-top: 30px;
+    padding: 16px 32px;
+    background-color: var(--corWhatsapp);
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    transition: 0.3s;
+}
+
+.videos #chat-whatsapp {
+    margin-right: 5px;
+}
+
+.videos #btn-whatsapp:hover {
+    opacity: 0.9;
+    transform: scale(1.08);
+}
+
+/* ESTILO DE: PROCESSO */
+
+.processo {
+    background-color: var(--corHeader);
+    flex-direction: column;
+    padding: 70px 17%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.processo #processo-titulo {
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    font-size: 53px;
+    font-weight: 500;
+    margin-top: 15px;
+    max-width: 800px;
+}
+
+.processo #processo-titulo #processo-destaque {
+    color: var(--corVermelha);
+}
+
+.processo #processo-descricao {
+    color: var(--corParagrafo);
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.processo .processo-card {
+    display: flex;
+    gap: 20px;
+    margin-top: 48px;
+}
+
+.processo .processo-card .card-number {
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid var(--corVermelha);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fontePadrao);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--corVermelha);
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.processo .processo-card:hover .card-number {
+    background-color: var(--corVermelha);
+    color: var(--corBranca);
+    border-color: var(--corVermelha);
+}
+
+.processo .processo-card .card-text h2{
+    color: var(--corBranca);
+    font-family: var(--fonteDestaque);
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.processo .processo-card .card-text p {
+    color: var(--corParagrafo);
+    font-family: var(--fontePadrao);
+    max-width: 500px;
+}
+
+/* ESTILO DE: DIFERENCIAL */
+
+.diferencial {
+    background-color: var(--corHeader);
+    flex-direction: column;
+    padding: 70px 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.diferencial #diferencial-titulo {
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    font-size: 53px;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 15px auto 0px auto;
+}
+
+.diferencial #diferencial-titulo #diferencial-destaque {
+    color: var(--corVermelha);
+}
+
+.diferencial #diferencial-descricao {
+    color: var(--corParagrafo);
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 700px;
+}
+
+.diferencial .diferencial-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 45px 0px 0px 0px;
+}
+
+.diferencial .diferencial-cards .diferencial-card {
+    text-align: center;
+    border-right: 1px solid var(--corCinza);
+    padding: 32px;
+}
+
+.diferencial .diferencial-cards .diferencial-card i {
+    color: var(--corVermelha);
+    font-size: 30px;
+}
+
+.diferencial .diferencial-cards .diferencial-card h2 {
+    color: var(--corBranca);
+    font-family: var(--fonteDestaque);
+    font-size: inherit;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 16px 0px 8px 0px;
+}
+
+.diferencial .diferencial-cards .diferencial-card p {
+    color: var(--corParagrafo);
+    font-family: var(--fontePadrao);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: auto;
+    margin: 0 auto;
+}
+
+.diferencial .diferencial-cards .diferencial-card:last-child {
+    border-right: none;
+}
+
+/* ESTILO DE: DIAGNÓSTICO */
+
+.diagnostico {
+    background-color: var(--corHeader);
+    display: flex;
+    flex-direction: column;
+    padding: 70px 17%;
+    text-align: center;
+    align-items: center;
+}
+
+.diagnostico #diagnostico-titulo {
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    font-size: 53px;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 15px auto 0px auto;
+}
+
+.diagnostico #diagnostico-titulo #diagnostico-destaque {
+    color: var(--corVermelha);
+}
+
+.diagnostico #diagnostico-descricao {
+    color: var(--corParagrafo);
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 700px;
+}
+
+.diagnostico .diagnostico-botoes {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.diagnostico #btn-whatsapp {
+    margin-top: 30px;
+    padding: 20px 48px;
+    background-color: var(--corWhatsapp);
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    transition: 0.3s;
+}
+
+.diagnostico #chat-whatsapp {
+    margin-right: 5px;
+}
+
+.diagnostico #btn-whatsapp:hover {
+    opacity: 0.9;
+    transform: scale(1.08);
+}
+
+.diagnostico #btn-projetos {
+    margin-top: 30px;
+    padding: 20px 48px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    background-color: transparent;
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    border: 1px solid #9b9b9b;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.diagnostico #btn-projetos:hover {
+    background-color: #ffffff11;
+}
+
+/* ESTILO DE: FAQ */
+
+/* FAQ */
+
+.faq {
+    background-color: var(--corHeader);
+    display: flex;
+    flex-direction: column;
+    padding: 70px 17%;
+    text-align: center;
+    align-items: center;
+}
+
+.faq #faq-titulo {
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    font-size: 53px;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 15px auto 64px auto;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.faq-item {
+    background: var(--corFAQ);
+    border: 1px solid #2a2a2a;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s;
+    width: 70%;
+}
+
+.faq-item:hover {
+    border-color: #444;
+}
+
+.faq-question {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--corBranca);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--fonteDestaque);
+}
+
+.faq-question i {
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.faq-answer p {
+    color: var(--corParagrafo);
+    font-family: var(--fonteDestaque);
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 0 30px 30px;
+}
+
+/* ativo */
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(45deg);
+}
+
+/* ESTILO DE: FOOTER */
+
+/* FOOTER */
+
+.footer {
+    background: #050505;
+    padding: 90px 17% 35px;
+    border-top: 1px solid #111;
+}
+
+/* CONTAINER */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+/* BRAND */
+
+.footer-brand {
+    max-width: 360px;
+}
+
+.footer-brand img {
+    width: 190px;
+    margin-bottom: 30px;
+}
+
+.footer-brand p {
+    color: #5f5f5f;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/* SOCIAL */
+
+.footer-social {
+    display: flex;
+    gap: 14px;
+}
+
+.footer-social a {
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid #1b1b1b;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #666;
+    font-size: 18px;
+
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    border-color: #fff;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* LINKS */
+
+.footer-links {
+    display: flex;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h3 {
+    color: #d9a28e;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 28px;
+}
+
+.footer-column a {
+    color: #4f4f4f;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 18px;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+
+/* BOTTOM */
+
+.footer-bottom {
+    margin-top: 90px;
+    padding-top: 30px;
+
+    border-top: 1px solid #111;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p,
+.footer-bottom span {
+    color: #4a4a4a;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+
+    .footer {
+        padding: 80px 8%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .footer-links {
+        gap: 60px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

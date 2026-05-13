@@ -1,0 +1,111 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--corHeader);
+    color: var(--corBranca);
+    font-family: var(--fontePadrao);
+    padding: 40px;
+}
+
+header img {
+    width: auto;
+    height: 40px;
+}
+
+header .brand-link {
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-family: var(--fontePadrao);
+    transition: color 0.3s ease;
+}
+
+header .brand-link:hover {
+    color: var(--corVermelha);
+}
+
+header .header__nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-family: var(--fontePadrao);
+}
+
+header .header__nav ul a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--corBranca);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header .header__nav ul a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--corVermelha);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+header .header__nav ul a:hover {
+    transform: translateY(-3px);
+    color: var(--corVermelha);
+}
+
+header .header__nav ul a:hover::after {
+    transform: scaleX(1);
+}
+
+header .header__actions {
+    display: flex;
+    gap: 20px;
+}
+
+header .header__actions .icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--corBranca);
+}
+
+header .header__actions i {
+    font-size: 22px;
+    transform: all 0.3s ease;
+}
+
+header .header__actions i:hover {
+    color: var(--corVermelha);
+    transform: translateY(-2px);
+}
+
+header .header__actions .orcamento-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 12px 22px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--corBranca);
+    text-decoration: none;
+    background-color: var(--corVermelha);
+    transition: all 0.3s ease;
+}
+
+header .orcamento-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+header .orcamento-btn:active {
+    transform: scale(0.97);
+}
+
