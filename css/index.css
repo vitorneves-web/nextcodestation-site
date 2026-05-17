@@ -1,5 +1,10 @@
-/* ESTILO DE: PÁGINA PRINCIPAL */
+html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden !important;
+}
 
+/* ESTILO DE: PÁGINA PRINCIPAL */
 .hero {
     position: relative;
     width: 100%;
@@ -8,16 +13,19 @@
     align-items: center;
     justify-content: space-between;
     padding: 125px 17% 40px 17%;
-    overflow: hidden;
+    overflow-x: hidden !important;
+    overflow-y: visible;
     background-color: transparent; 
+    box-sizing: border-box !important;
 }
 
 .vanta-bg-container {
     position: relative;
-    width: 100%;
+    width: 100% !important;
+    max-width: 100vw;
     background-color: #010101; 
     z-index: 1;
-    overflow: visible;
+    overflow: hidden !important;
     padding-bottom: 180px;
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
@@ -230,7 +238,8 @@
     opacity: 0.9;
     transform: translateY(-4px);
     background: #0aa004;
-    box-shadow: 0 8px 30px rgba(2, 254, 6, 0.875),;
+    border-color: transparent;
+    box-shadow: 0 8px 10px rgba(0, 160, 3, 0.336);
 }
 
 .formulario button:active {
@@ -246,7 +255,7 @@
     gap: 30px;
     padding: 0 17%;
     margin-top: -130px; 
-    margin-bottom: -40px;
+    margin-bottom: 0px;
     z-index: 10;
 }
 
@@ -299,7 +308,7 @@
     z-index: 2;
     background-color: black;
     flex-direction: column;
-    padding: 150px 17% 80px 17%;
+    padding: 140px 17% 80px 17%;
 }
 
 .services #services-titulo {

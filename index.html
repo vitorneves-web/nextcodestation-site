@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style-geral.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
 <body>
     <header>
@@ -38,7 +39,7 @@
         <div class="divisor"></div>
         <div class="vanta-bg-container" id="vanta-bg-container">
             <section class="hero" id="hero">
-                <div class="div-text">
+                <div class="div-text" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000">
                     <h2 id="titulo"><i id="seta-titulo" class="bi bi-arrow-right-short"></i></i> ESTRUTURA DIGITAL</h2>
 
                     <h1 id="subtitulo">Transformamos sua presença digital em uma 
@@ -52,7 +53,7 @@
                         <a href="#" class="btn btn-primary"><button id="btn-projetos"><i id="projetos" class="bi bi-search"></i>&nbsp;&nbsp;&nbsp;Ver Projetos</button></a>
                     </div>
                 </div>
-                <div class="div-form">
+                <div class="div-form" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2000">
                     <div class="form-box">
 
                         <form class="formulario" novalidate>
@@ -132,26 +133,26 @@
         </div>        
         
         <div class="cards">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-up" data-aos-duration="3000">
                             <i class="bi bi-bullseye"></i>
                             <h2>Foco em vendas</h2>
                             <p>Estratégias desenvolvidas para transformar visitantes em clientes reais.</p>
                         </div>
 
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-up" data-aos-duration="3000">
                             <i class="bi bi-rocket-takeoff"></i>
                             <h2>Execução completa</h2>
                             <p>Landing pages, anúncios, criativos e estrutura digital em um só lugar.</p>
                         </div>
 
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-up" data-aos-duration="3000">
                             <i class="bi bi-telephone"></i>
                             <h2>Atendimento rápido</h2>
                             <p>Suporte humanizado e acompanhamento próximo em cada etapa.</p>
                         </div>
             </div>
 
-        <section class="services" id="services">
+        <section class="services" id="services" data-aos="fade-down" data-aos-duration="3000">
 
             <h1 id="services-titulo">Soluções digitais para <span id="services-destaque">acelerar o crescimento</span> da sua empresa.</h1>
 
@@ -197,10 +198,12 @@
         </section>     
         
         <section class="videos" id="projetos">
-            <h1 id="videos-titulo">Criativos e conteúdos <span id="videos-destaque">em movimento.</span></h1>
-            <p id="videos-descricao">Vídeos desenvolvidos para anúncios, reels e posicionamento digital com foco em retenção e impacto visual.</p>
+            <div class="videos-text" data-aos="zoom-out-down" data-aos-duration="2000">
+                <h1 id="videos-titulo">Criativos e conteúdos <span id="videos-destaque">em movimento.</span></h1>
+                <p id="videos-descricao">Vídeos desenvolvidos para anúncios, reels e posicionamento digital com foco em retenção e impacto visual.</p>
+            </div>
 
-            <div class="carrossel-container">
+            <div class="carrossel-container" data-aos="fade-up" data-aos-duration="3000">
                 <button class="seta-carrossel seta-esquerda" id="btnSetaEsquerda" aria-label="Voltar">
                     <i class="bi bi-chevron-left"></i>
                 </button>
@@ -253,7 +256,7 @@
 
         <section class="processo" id="processo">
 
-            <div class="processo-texto">
+            <div class="processo-texto" data-aos="fade-right" data-aos-duration="2000">
                 <h1 id="processo-titulo">Como funciona nosso <span id="processo-destaque">processo.</span></h1>
                 <p id="processo-descricao">Uma estrutura organizada para garantir clareza, velocidade e resultado em cada projeto.</p>
 
@@ -293,17 +296,18 @@
 
                 </div>
             </div>
-            <div class="processo-imgs">
+            <div class="processo-imgs" data-aos="fade-left" data-aos-duration="2000">
                 <img src="images/processo.gif" alt="TEMPORARIO">
             </div>
 
         </section>
 
-        <section class="diferencial">
-            <h1 id="diferencial-titulo">Mais do que design. <span id="diferencial-destaque">Estrutura, estratégia e performance.</span></h1>
-            <p id="diferencial-descricao">Nosso foco não é apenas criar páginas bonitas. Desenvolvemos estruturas digitais completas para transformar atenção em clientes reais.</p>
-
-            <div class="diferencial-cards">
+        <section class="diferencial" id="diferencial">
+            <div class="diferencial-text" data-aos="fade-down" data-aos-duration="3000">
+                <h1 id="diferencial-titulo">Mais do que design. <span id="diferencial-destaque">Estrutura, estratégia e performance.</span></h1>
+                <p id="diferencial-descricao">Nosso foco não é apenas criar páginas bonitas. Desenvolvemos estruturas digitais completas para transformar atenção em clientes reais.</p>
+            </div>
+            <div class="diferencial-cards" data-aos="fade-up" data-aos-duration="3000">
 
                 <div class="diferencial-card">
                     <i class="bi bi-bullseye"></i>
@@ -347,13 +351,13 @@
     
         <section class="faq" id="faq">
 
-            <h1 id="faq-titulo">Perguntas frequentes</h1>
+            <h1 id="faq-titulo" data-aos="fade-up" data-aos-duration="2000">Perguntas frequentes</h1>
 
             <div class="faq-container">
 
                 <!-- ITEM -->
 
-                <div class="faq-item">
+                <div class="faq-item" data-aos="flip-up" data-aos-duration="900">
                     <button class="faq-question">
                         Em quanto tempo começo a ver resultado?
                         <i class="bi bi-plus-lg"></i>
@@ -368,7 +372,7 @@
 
                 <!-- ITEM -->
 
-                <div class="faq-item">
+                <div class="faq-item" data-aos="flip-up" data-aos-duration="1000">
                     <button class="faq-question">
                         Vocês trabalham com qualquer tipo de negócio?
                         <i class="bi bi-plus-lg"></i>
@@ -383,7 +387,7 @@
 
                 <!-- ITEM -->
 
-                <div class="faq-item">
+                <div class="faq-item" data-aos="flip-up" data-aos-duration="1500">
                     <button class="faq-question">
                         O investimento em anúncios já está incluso?
                         <i class="bi bi-plus-lg"></i>
@@ -398,7 +402,7 @@
 
                 <!-- ITEM -->
 
-                <div class="faq-item">
+                <div class="faq-item" data-aos="flip-up" data-aos-duration="2000">
                     <button class="faq-question">
                         Vocês também criam os criativos e vídeos?
                         <i class="bi bi-plus-lg"></i>
@@ -413,7 +417,7 @@
 
                 <!-- ITEM -->
 
-                <div class="faq-item">
+                <div class="faq-item" data-aos="flip-up" data-aos-duration="2000">
                     <button class="faq-question">
                         Como funciona o atendimento?
                         <i class="bi bi-plus-lg"></i>
@@ -541,5 +545,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="js/background_fog.js"></script>
     <script src="js/background_net.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
