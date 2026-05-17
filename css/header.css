@@ -1,11 +1,19 @@
 header {
+    position: fixed;        
+    top: 0;
+    left: 0;
+    width: 100%;           
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--corHeader);
-    color: var(--corBranca);
     font-family: var(--fontePadrao);
-    padding: 40px;
+    padding: 20px 40px;   
+    background-color: rgba(35, 34, 34, 0.059); 
+    backdrop-filter: blur(12px);           
+    -webkit-backdrop-filter: blur(12px);   
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08); 
+    transition: all 0.3s ease;
 }
 
 header img {
@@ -29,6 +37,7 @@ header .header__nav ul {
     display: flex;
     gap: 40px;
     font-family: var(--fontePadrao);
+    font-weight: bold;
 }
 
 header .header__nav ul a {
@@ -36,6 +45,8 @@ header .header__nav ul a {
     display: inline-block;
     text-decoration: none;
     color: var(--corBranca);
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.512);
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -55,6 +66,7 @@ header .header__nav ul a::after {
 header .header__nav ul a:hover {
     transform: translateY(-3px);
     color: var(--corVermelha);
+    text-shadow: none;
 }
 
 header .header__nav ul a:hover::after {
@@ -101,11 +113,15 @@ header .header__actions .orcamento-btn {
 }
 
 header .orcamento-btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     filter: brightness(1.1);
+    box-shadow: 0 0 15px rgba(224, 0, 0, 0.2), 
+                0 0 30px rgba(224, 0, 0, 0.2), 
+                0 0 45px rgba(224, 0, 0, 0.2);
 }
 
 header .orcamento-btn:active {
     transform: scale(0.97);
+    box-shadow: 0 0 10px rgba(224, 0, 0, 0.5);
 }
 

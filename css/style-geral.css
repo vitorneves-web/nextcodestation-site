@@ -5,15 +5,16 @@
 
 :root {
     --corBranca: #F9F9F9;
+    --corCinzaClaro: #C4C4C4;
     --corPreta: #000000;
     --corVermelha: #E50914; 
-    --corSecundaria: #B7212C;
+    --corSecundaria: #E50914;
     --corTercearia: #680E16;
     --corCinza: #242020;
     --corHeader: #0F1014;
-    --corWhatsapp: #16b80f;
+    --corWhatsapp: #0ba506;
     --corParagrafo: rgba(226, 226, 226, 0.5);
-    --corFAQ: #191B1B;
+    --corFAQ: #0c0c0c;
     
 
     --fontePadrao: "Geist", sans-serif;
@@ -28,6 +29,12 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 .divisor {
