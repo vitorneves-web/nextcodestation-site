@@ -249,9 +249,11 @@ html, body {
 
 @media screen and (max-width: 768px){
     .hero {
+        display: flex;
         flex-direction: column;
+        z-index: 1;
         padding: 80px 10% 40px 10%;
-        gap: 40px;
+        gap: 40px; 
     }
 
     .hero #subtitulo {
@@ -294,7 +296,14 @@ html, body {
     .formulario input,
     .formulario select{
         font-size: 15px;
-}
+    }
+
+    .vanta-bg-container {
+        padding-bottom: 50px; 
+        z-index: 0; 
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+    }
 }
 
 .cards {
@@ -1073,8 +1082,6 @@ html, body {
 }
 
 .vanta-bg-container2 {
-    -webkit-mask-image: linear-gradient(from top, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 80%);
-    mask-image: linear-gradient(from top, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 80%);
     position: relative;
     width: 100%;
     background-color: #010101; 
@@ -1171,8 +1178,16 @@ html, body {
 }
 
 @media screen and (max-width: 768px){
+    .vanta-bg-container2 {
+        z-index: 0;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+    }
+
     .diagnostico {
-        padding: 80px 10% 40px 10%;
+        position: relative;
+        z-index: 10;
+        padding: 60px 8% 40px 8%;
     }
 
     .diagnostico #diagnostico-descricao {
@@ -1181,7 +1196,9 @@ html, body {
 
     .diagnostico .diagnostico-botoes {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+        width: 100%; 
+        margin-top: 25px;
     }
 
     .diagnostico #diagnostico-titulo{
@@ -1193,10 +1210,12 @@ html, body {
      }
     
     .diagnostico #btn-whatsapp,
-    .diagnostico #btn-projetos {
-        padding: 16px 20px;
-        margin: 0 auto;
+    .diagnostico #btn-projetos {     
+        max-width: 320px;  
+        padding: 16px 28px;
+        margin: 0 auto;    
         font-size: 15px;
+        box-sizing: border-box;
     }
 }
 
