@@ -404,8 +404,8 @@ html, body {
 @media screen and (max-width: 768px) {
     .cards {
         flex-direction: column;
-        padding: 0 10%;
-        margin-top: -100px; 
+        padding: 20px 10%;
+        margin-top: -50px; 
     }
 
     .cards .card {
@@ -917,7 +917,8 @@ html, body {
 
 .processo .processo-imgs{
     display: flex;
-    margin-left: 50px;
+    flex-direction: row;
+    margin-left: 100px;
     margin-top: 90px;
 }
 
